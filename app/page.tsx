@@ -18,6 +18,13 @@ export const metadata: Metadata = {
   },
 }
 
+/**
+ * Renders a web component that displays an event driven, AI-powered, and highly scalable web development section.
+ *
+ * @return {JSX.Element} The rendered web component.
+ */
+
+
 export default function Web() {
   return (
     <>

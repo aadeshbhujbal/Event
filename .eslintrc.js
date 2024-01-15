@@ -67,11 +67,20 @@ module.exports = {
   },
 }
 
+/**
+ * Gets all subdirectories that should be sorted
+ * @returns {string[]} An array of subdirectory names
+ */
 function getDirectoriesToSort() {
   const ignoredSortingDirectories = [".git", ".next", ".vscode", "node_modules"]
   return getDirectories(process.cwd()).filter((f) => !ignoredSortingDirectories.includes(f))
 }
 
+/**
+ * Gets all subdirectories in the given path
+ * @param {string} path - The path to get subdirectories of
+ * @returns {string[]} An array of subdirectory names
+ */
 function getDirectories(path) {
   return fs.readdirSync(path).filter(function (file) {
     return fs.statSync(path + "/" + file).isDirectory()
