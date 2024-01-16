@@ -21,11 +21,7 @@ export const metadata: Metadata = {
 export default function Web() {
   return (
     <>
-      <main>
-        <Button variant="default" className="px-10">
-          Click Me
-        </Button>
-      </main>
+      <main></main>
     </>
   )
 }
